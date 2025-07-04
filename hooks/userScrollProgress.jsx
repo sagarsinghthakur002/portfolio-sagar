@@ -1,3 +1,6 @@
+"use client";
+
+
 import { useState, useEffect } from 'react';
 
 function useScrollProgress() {
@@ -23,4 +26,6 @@ function useScrollProgress() {
   return completion;
 }
 
-export default useScrollProgress; 22:41
+export default useScrollProgress;
+
+//This hook probably tracks how much the user has scrolled on the page — likely returning a percentage value
