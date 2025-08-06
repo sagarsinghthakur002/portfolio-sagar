@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Logo = () => {
+const DevImg = () => {
   return (
     <div>
-      logo
+      
     </div>
   )
 }
 
-export default Logo
+export default DevImg

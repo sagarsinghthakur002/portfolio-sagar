@@ -17,6 +17,8 @@ function useScrollProgress() {
       }
     };
 
+
+    //Event listener to track scroll progress
     window.addEventListener('scroll', updateScrollCompletion);
     return () => {
       window.removeEventListener('scroll', updateScrollCompletion);
@@ -28,4 +30,4 @@ function useScrollProgress() {
 
 export default useScrollProgress;
 
-//This hook probably tracks how much the user has scrolled on the page — likely returning a percentage value
+//This hook probably tracks how much the user has scrolled on the page — likely returning a percentage value--like sidebar 

@@ -13,6 +13,8 @@ const variants = {
 
 const Template = ({ children }) => {
     const completion = useScrollProgress();
+    //This hook probably tracks how much the user has scrolled on the page — likely returning a percentage value
+    
     return (
         <>
             <motion.div

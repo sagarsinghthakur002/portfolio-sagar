@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Logo = () => {
+const Badge = () => {
   return (
     <div>
-      logo
+      
     </div>
   )
 }
 
-export default Logo
+export default Badge
