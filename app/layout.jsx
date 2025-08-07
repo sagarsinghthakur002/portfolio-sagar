@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 //theme provider
 import { ThemeProvider } from "@/components/ThemeProvider";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider attribute="class" defaultTheme="light">
         <Header />
         {children}
+        
         <Footer />
         </ThemeProvider>
       </body>
