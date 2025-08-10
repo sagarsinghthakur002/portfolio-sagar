@@ -1,7 +1,12 @@
-import Image from "next/image";
+// app/page.jsx
+'use client';
 
-export default function Home() {
+import Hero from '@/components/Hero';
+
+export default function HomePage() {
   return (
-    <main>homepage</main>
+    <main>
+      <Hero />
+    </main>
   );
 }

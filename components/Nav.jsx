@@ -5,14 +5,14 @@ import { usePathname } from 'next/navigation';
 
 const Links = [
   { path: '/', label: 'Home' },
-  { path: '/projects', label: 'My Projects' },
+  { path: '/projects', label: 'Projects' },
   { path: '/contact', label: 'Contact' },
 ];
 
 const Nav = ({
-  containerStyles = 'flex gap-6 items-center',
-  linkStyles = 'text-gray-700 hover:text-black transition duration-200',
-  underlineStyles = 'border-b-2 border-black pb-1 font-semibold',
+  containerStyles = 'flex gap-8 items-center',
+  linkStyles = 'relative text-gray-800 transition duration-300 after:content-[""] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:scale-x-0 after:bg-black after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-black',
+  underlineStyles = 'after:scale-x-100 text-black font-semibold',
 }) => {
   const path = usePathname();
 
@@ -25,7 +25,7 @@ const Nav = ({
           <Link
             href={link.path}
             key={index}
-            className={`${linkStyles} capitalize ${isActive ? underlineStyles : ''}`}
+            className={`${linkStyles} ${isActive ? underlineStyles : ''}`}
             aria-current={isActive ? 'page' : undefined}
           >
             {link.label}

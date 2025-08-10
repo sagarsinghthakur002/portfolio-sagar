@@ -23,7 +23,8 @@ const Template = ({ children }) => {
                 animate="enter"
                 transition={{ type: 'linear', delay: 0.2, duration: 0.5 }}
 
-            ></motion.div>
+            > 
+            </motion.div>
 
             <span style={{ transform: `translateY(${completion - 100}%)` }}
                 className="fixed top-0 right-0 bottom-0 z-50 w-1 bg-primary transition-all duration-700 "></span>

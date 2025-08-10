@@ -1,11 +1,11 @@
-import React from 'react'
+import Link from "next/link";
 
 const Logo = () => {
   return (
-    <div>
-      <img src="/logo.png" alt="Logo" className="w-12 h-12" /> 
-    </div>
-  )
-}
+    <Link href="/">
+      <img src="/logo.png" alt="Logo" className="w-12 h-12" />
+    </Link>
+  );
+};
 
-export default Logo
+export default Logo;
